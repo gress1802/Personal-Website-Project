@@ -2,8 +2,8 @@
 ul{
     list-style-type: none;
     margin: 0;
+    margin-right: auto;
     padding: 10px;
-    background-color: #333;
 }
 
 li{
@@ -22,33 +22,42 @@ li a{
 }
 
 li a:hover{
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     background-color: #111;
-    padding: 5px;
 }
 
 .iconImage:hover{
-    background-color: #111;
-    padding: 5px;
+    width: 35px;
+    height:35px;
 }
 
 header{
     display: block;
-    background-color: #333;
+    background-color: rgb(44, 44, 44);
     position: fixed;
     width: 100%;
     top: 0;
     transition: top .3s;
+    opacity: .7;
 }
 
 #navBar{
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .top{
     font-family: Lato, Light;
     font-size: large;
+    padding: 3px;
 }
 
 header:after{
@@ -58,9 +67,8 @@ header:after{
 }
 
 #icons{
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
-    margin-left: auto;
 }
 
 .iconItem{
@@ -68,11 +76,75 @@ header:after{
     padding-right: 5px;
 }
 
-/* Now styling the rest of the page */
-
 body{
     margin: auto;
-    background-color: #333;
 }
 
+/*
+  Fade in animation for Safari, Chrome, Opera, Firefox, and Internet Explore 
+  Styling the home part of the page
+*/
 
+#fadeIn{
+    text-align: center;
+    font-family: Arial;
+    font-size: 75px;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeIn 3s; /* Firefox < 16 */
+    -ms-animation: fadeIn 3s; /* Internet Explorer */
+    -o-animation: fadeIn 3s; /* Opera < 12.1 */
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadeIn { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadeIn { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#beginningContainer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    width: 50%;
+    opacity: .7;
+    border-top: 10px;
+}
+
+#textItem{
+    display: block;
+}
+
+#firstText{
+    color: white;
+    font-family: 'Lato', sans-serif
+}
