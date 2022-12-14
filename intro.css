@@ -56,7 +56,7 @@
     width: 50%;
     border-top: 10px;
     position: relative;
-    top: 300px;
+    top: 200px;
     /*background-color: black;  /*This is so that we can see the size of the container that will hold the information on the introductory screen */
 }
 
@@ -84,5 +84,5 @@
 #startPage{
     margin: auto;
     width: auto;
-    height: 975px; /* This is the height of the image file */
+    height: 800px; /* This is the height of the image file */
 }
