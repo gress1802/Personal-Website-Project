@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <title>Joseph Gress</title>
         <!--Link to fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
         <!--Links to CSS -->
-        <link href = "./mainPage.css" rel = "stylesheet">
+        <link href = "./navBar.css" rel = "stylesheet"> <!--styling for navigation bar-->
+        <link href = "./intro.css" rel = "stylesheet"> <!--styling for the content at "Home"-->
+        <link href = "./aboutMe.css" rel = "stylesheet"> <!--styling for the about me section-->
 
         <!--Links to JavaScript-->
         <script src = "./navBar.js" defer></script> <!--defer to execute after parsing-->
@@ -16,37 +18,57 @@
         <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     </head>
 
-    <body style = "background-image: url('./Images/background.jpg');">
-        <!--This is the navigation bar-->
-        <header id = "navigation">
-            <nav>
-                <div id = "navBar">
-                    <ul> 
-                        <li><a class = "top" href = "javascript:;" onclick = "home()">Home</a></li>
-                        <li><a class = "top" href = "javascript:;" onclock = "aboutMe()">About</a></li>
-                        <li><a class = "top" href = "javascript:;" onclick = "projects()">Projects</a></li>
-                        <li><a class = "top" href = "javascript:;" onclick = "contact()">Contact</a></li>
-                    </ul>
-                    <div id = "icons">
-                        <a class = "iconItem" href = "javascript:;" onclick = "github()"><img class = "iconImage" src = "./Images/githubIcon.png" width = "30px" height = "30px"></a>
-                        <a class = "iconItem" href = "javascript:;" onclick = "main()"><img class = "iconImage" src = "./Images/mailIcon.png" width = "30px" height = "30px"></a>
-                        <a class = "iconItem" href = "javascript:;" onclick = "linkedin()"><img class = "iconImage" src = "./Images/linkedinIcon.png" width = "30px" height = "30px"></a>
+    <body>
+        <!--This is the introductory page container-->
+        <div id = "startPage" style = "background-image: url('./Images/background.jpg');">
+            <!--This is the navigation bar-->
+            <header id = "navigation">
+                <nav>
+                    <div id = "navBar">
+                        <ul> 
+                            <li><a class = "top" href = "javascript:;" onclick = "home()">Home</a></li>
+                            <li><a class = "top" href = "javascript:;" onclock = "aboutMe()">About</a></li>
+                            <li><a class = "top" href = "javascript:;" onclick = "projects()">Projects</a></li>
+                            <li><a class = "top" href = "javascript:;" onclick = "contact()">Contact</a></li>
+                        </ul>
+                        <div id = "icons">
+                            <a class = "iconItem" href = "javascript:;" onclick = "github()"><img class = "iconImage" src = "./Images/githubIcon.png" width = "30px" height = "30px"></a>
+                            <a class = "iconItem" href = "javascript:;" onclick = "main()"><img class = "iconImage" src = "./Images/mailIcon.png" width = "30px" height = "30px"></a>
+                            <a class = "iconItem" href = "javascript:;" onclick = "linkedin()"><img class = "iconImage" src = "./Images/linkedinIcon.png" width = "30px" height = "30px"></a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div id = "beginningContainer">
+                <div class = "fadeIn">
+                    <img id = "personalPhoto" src = "./Images/CircleFunny.png" alt = "Picture of Joseph Gress">
+                    <div id = "textContainer">
+                        <h1 id = "firstText"><strong>Joseph Gress</strong></h1>
+                        <h2 id = "underFirst"><strong>Computer Science at UW-La Crosse | Software Engineering & Data Science</strong></h2>
                     </div>
                 </div>
-            </nav>
-        </header>
-
-        <div id = beginningContainer>
-            <div id = "fadeIn">
-                <div id = textItem>
-                    <p id = "firstText">Joseph Gress</p>
-                </div>
             </div>
+
+        </div>
+
+        <!--This is the container for the about me section-->
+        <div id = "aboutMe">
+            <div id = "flexItem1">
+                <h1 id = "aboutHeading">About Me</h1>
+            </div>
+            <div id = "flexItem2">
+                <p>
+                    <br>
+                    I'm a student at the University of Wisconsin - La Crosse. I will be graduating in December of 2024 with a major in Computer Science and a 
+                    Minor in Mathematics. My main interests are in machine learning, data analytics, and software development; this list will continue to grow.
+                </p>
+            </div>
+
         </div>
 
         <footer>
-            
-        </footer>
 
+        </footer>
     </body>
 </html>

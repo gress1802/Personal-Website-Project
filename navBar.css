@@ -1,0 +1,91 @@
+/* This is the styling for the navigation bar */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    margin-right: auto;
+    padding: 10px;
+}
+
+li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover{
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #111;
+}
+
+.iconImage:hover{
+    width: 35px;
+    height:35px;
+}
+
+header{
+    display: block;
+    background-color: rgb(44, 44, 44);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top .3s;
+    opacity: .7;
+    z-index: 300; /* making sure everything is wrapped under */
+}
+
+#navBar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.top{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sansSerif;
+    font-size: large;
+    padding: 3px;
+}
+
+header:after{
+    content: "";
+    display: block;
+    border: .25px solid #111;
+}
+
+#icons{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.iconItem{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+body{
+    margin: auto;
+}
+
+
+

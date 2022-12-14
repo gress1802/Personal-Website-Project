@@ -1,0 +1,88 @@
+/*
+  Fade in animation for Safari, Chrome, Opera, Firefox, and Internet Explore 
+  Styling the home part of the page
+*/
+
+.fadeIn{
+    text-align: center;
+    font-family: Arial;
+    font-size: 75px;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeIn 3s; /* Firefox < 16 */
+    -ms-animation: fadeIn 3s; /* Internet Explorer */
+    -o-animation: fadeIn 3s; /* Opera < 12.1 */
+    animation: fadeIn 3s;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadeIn { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadeIn { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#beginningContainer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    border-top: 10px;
+    position: relative;
+    top: 300px;
+    /*background-color: black;  /*This is so that we can see the size of the container that will hold the information on the introductory screen */
+}
+
+#textContainer{
+    display: block;
+}
+
+#firstText{
+    color: white;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sansSerif;
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+
+#underFirst{
+    color: white;
+    font-size:30%;
+}
+
+#personalPhoto{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+#startPage{
+    margin: auto;
+    width: auto;
+    height: 975px; /* This is the height of the image file */
+}

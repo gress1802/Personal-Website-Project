@@ -1,0 +1,26 @@
+/* This is the stylesheet for the about me section of my website */
+
+#aboutMe{ /* This is the container for the entire section */
+    background-color: rgb(22, 21, 21);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: warp;
+    align-items: center;
+    padding: 50px;
+
+}
+
+#flexItem1{
+    font-size: 120%;
+}
+
+#flexItem2{
+    color: rgb(122, 122, 122);
+    font-size: 120%;
+    width: 75%;
+}
+
+#aboutHeading{
+    color: rgb(206, 121, 9);
+}
