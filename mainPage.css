@@ -1,0 +1,78 @@
+/* This is the styling for the navigation bar */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+}
+
+li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+    padding: 5px;
+}
+
+.iconImage:hover{
+    background-color: #111;
+    padding: 5px;
+}
+
+header{
+    display: block;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top .3s;
+}
+
+#navBar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.top{
+    font-family: Lato, Light;
+    font-size: large;
+}
+
+header:after{
+    content: "";
+    display: block;
+    border: .25px solid #111;
+}
+
+#icons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+}
+
+.iconItem{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Now styling the rest of the page */
+
+body{
+    margin: auto;
+    background-color: #333;
+}
+
+

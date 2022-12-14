@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Joseph Gress</title>
+        <!--Link to fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
         <!--Links to CSS -->
         <link href = "./mainPage.css" rel = "stylesheet">
@@ -15,12 +17,25 @@
     </head>
 
     <body>
-
+        <!--This is the navigation bar-->
         <header id = "navigation">
-            <div id = "navBar">
-                
-            </div>
+            <nav>
+                <div id = "navBar">
+                    <ul> 
+                        <li><a class = "top" href = "javascript:;" onclick = "home()">Home</a></li>
+                        <li><a class = "top" href = "javascript:;" onclock = "aboutMe()">About</a></li>
+                        <li><a class = "top" href = "javascript:;" onclick = "projects()">Projects</a></li>
+                        <li><a class = "top" href = "javascript:;" onclick = "contact()">Contact</a></li>
+                    </ul>
+                    <div id = "icons">
+                        <a class = "iconItem" href = "javascript:;" onclick = "github()"><img class = "iconImage" src = "./Images/githubIcon.png" width = "30px" height = "30px"></a>
+                        <a class = "iconItem" href = "javascript:;" onclick = "main()"><img class = "iconImage" src = "./Images/mailIcon.png" width = "30px" height = "30px"></a>
+                        <a class = "iconItem" href = "javascript:;" onclick = "linkedin()"><img class = "iconImage" src = "./Images/linkedinIcon.png" width = "30px" height = "30px"></a>
+                    </div>
+                </div>
+            </nav>
         </header>
+
 
         <footer>
             
