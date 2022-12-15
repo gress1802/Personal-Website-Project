@@ -2,25 +2,44 @@
 
 #aboutMe{ /* This is the container for the entire section */
     background-color: rgb(22, 21, 21);
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    flex-direction: warp;
-    align-items: center;
-    padding: 50px;
-
+    height: 100vh;
 }
 
 #flexItem1{
     font-size: 120%;
+    padding-top: 75px;
 }
 
 #flexItem2{
     color: rgb(122, 122, 122);
-    font-size: 120%;
-    width: 75%;
+    font-size: 135%;
+    width: 50%;
 }
 
 #aboutHeading{
     color: rgb(206, 121, 9);
+}
+
+#aboutMeFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutDesc{
+    font-family: 'opensans-regular', sans-serif;
+}
+
+#splitFlex{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+#left{
+    padding-right: 20vh;
+}
+
+#right{
+    padding-left: 20vh;
 }

@@ -26,15 +26,15 @@
                 <nav>
                     <div id = "navBar">
                         <ul> 
-                            <li><a class = "top" href = "javascript:;" onclick = "home()">Home</a></li>
-                            <li><a class = "top" href = "javascript:;" onclock = "aboutMe()">About</a></li>
-                            <li><a class = "top" href = "javascript:;" onclick = "projects()">Projects</a></li>
-                            <li><a class = "top" href = "javascript:;" onclick = "contact()">Contact</a></li>
+                            <li><a id = "home" class = "top" href = "javascript:home()" onclick = "home()">Home</a></li>
+                            <li><a id = "about" class = "top" href = "javascript:aboutMe()" onclock = "aboutMe()">About</a></li>
+                            <li><a id = "projects" class = "top" href = "javascript:projects()" onclick = "projects()">Projects</a></li>
+                            <li><a id = "contact" class = "top" href = "javascript:contact()" onclick = "contact()">Contact</a></li>
                         </ul>
                         <div id = "icons">
-                            <a class = "iconItem" href = "javascript:;" onclick = "github()"><img class = "iconImage" src = "./Images/githubIcon.png" width = "30px" height = "30px"></a>
-                            <a class = "iconItem" href = "javascript:;" onclick = "main()"><img class = "iconImage" src = "./Images/mailIcon.png" width = "30px" height = "30px"></a>
-                            <a class = "iconItem" href = "javascript:;" onclick = "linkedin()"><img class = "iconImage" src = "./Images/linkedinIcon.png" width = "30px" height = "30px"></a>
+                            <a class = "iconItem" href = "https://github.com/gress1802"><img class = "iconImage" src = "./Images/githubIcon.png" width = "30px" height = "30px"></a>
+                            <a class = "iconItem" href = "javascript:mail()"><img class = "iconImage" src = "./Images/mailIcon.png" width = "30px" height = "30px"></a>
+                            <a class = "iconItem" href = "www.linkedin.com/in/joseph-gress"><img class = "iconImage" src = "./Images/linkedinIcon.png" width = "30px" height = "30px"></a>
                         </div>
                     </div>
                 </nav>
@@ -54,17 +54,22 @@
 
         <!--This is the container for the about me section-->
         <div id = "aboutMe">
-            <div id = "flexItem1">
-                <h1 id = "aboutHeading">About Me</h1>
+            <div id = "aboutMeFlex">
+                <div id = "flexItem1">
+                    <h1 id = "aboutHeading">About Me</h1>
+                </div>
+                <div id = "flexItem2">
+                    <p id = "aboutDesc">
+                        <br>
+                        I'm a student at the University of Wisconsin - La Crosse. I will be graduating in December of 2024 with a major in Computer Science and a 
+                        Minor in Mathematics. My main interests are in machine learning, data analytics, and software development; this list will continue to grow.
+                    </p>
+                </div>
+                <div id = "splitFlex">
+                    <div id = "left">asdasdasd</div>
+                    <div id = "right">asdasd</div>
+                </div>
             </div>
-            <div id = "flexItem2">
-                <p>
-                    <br>
-                    I'm a student at the University of Wisconsin - La Crosse. I will be graduating in December of 2024 with a major in Computer Science and a 
-                    Minor in Mathematics. My main interests are in machine learning, data analytics, and software development; this list will continue to grow.
-                </p>
-            </div>
-
         </div>
 
         <footer>

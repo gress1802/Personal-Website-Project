@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 ul{
@@ -59,6 +60,12 @@ header{
     flex-direction: row;
     align-items: center;
     overflow: hidden;
+    height: 70px
+}
+
+#navigation{
+    top: -70px;
+    transition: top 0.3s;
 }
 
 .top{

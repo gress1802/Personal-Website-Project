@@ -84,5 +84,5 @@
 #startPage{
     margin: auto;
     width: auto;
-    height: 100vh; /* This is the height of the image file */
+    height: 100vh; /* This is the height of the users viewport */
 }
