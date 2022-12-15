@@ -15,7 +15,7 @@ function home(){
 }
 
 function aboutMe(){
-    document.getElementById("aboutMe").scrollIntoView(true);
+    document.getElementById("aboutMeFlex").scrollIntoView(true);
 }
 
 function projects(){
