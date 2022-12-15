@@ -93,27 +93,28 @@
 }
 
 #secondTopText{
-    padding-left: 10vmin;
+    padding-left: 6vmin;
 }
 
 #thirdTopText{
-    padding-left: 13vh;
-}
-
-#firstBottomText{
-    padding-left: 7vmin;
+    padding-left: 10vh;
 }
 
 .timeLineText{
     color: rgb(206, 121, 9);
+    font-size: 2vh; 
+}
+
+#firstBottomText{
+    padding-left: 6vmin;
 }
 
 #secondBottomText{
-    padding-left: 12vh;
+    padding-left: 8vh;
 }
 
 #thirdBottomText{
-    padding-left: 15vh;
+    padding-left: 12vh;
 }
 
 .above{
