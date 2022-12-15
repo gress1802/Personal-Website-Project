@@ -27,19 +27,16 @@
 }
 
 #aboutDesc{
+    padding: 1%;
     font-family: 'opensans-regular', sans-serif;
+    font-size: 100%;
+    text-indent: 30px;
 }
 
-#splitFlex{
+#flexItem3{
     display: flex;
     flex-direction: row;
     padding-top: 50px;
 }
 
-#left{
-    padding-right: 20vh;
-}
 
-#right{
-    padding-left: 20vh;
-}

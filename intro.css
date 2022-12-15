@@ -7,11 +7,11 @@
     text-align: center;
     font-family: Arial;
     font-size: 75px;
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadeIn 3s; /* Firefox < 16 */
-    -ms-animation: fadeIn 3s; /* Internet Explorer */
-    -o-animation: fadeIn 3s; /* Opera < 12.1 */
-    animation: fadeIn 3s;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeIn 1s; /* Firefox < 16 */
+    -ms-animation: fadeIn 1s; /* Internet Explorer */
+    -o-animation: fadeIn 1s; /* Opera < 12.1 */
+    animation: fadeIn 1s;
 
 }
 
@@ -58,7 +58,18 @@
     position: relative;
     top: calc(29%);
     /*background-color: black;  /*This is so that we can see the size of the container that will hold the information on the introductory screen */
+    animation: 1s ease-in-out 0s 1 slide;
 }
+
+@keyframes slide{
+    0%{
+        transform: translateY(-25vh)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 
 #textContainer{
     display: block;
