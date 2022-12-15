@@ -54,9 +54,8 @@
     margin: auto;
     justify-content: center;
     width: 50%;
+    padding-top: 25vh;
     border-top: 10px;
-    position: relative;
-    top: calc(29%);
     /*background-color: black;  /*This is so that we can see the size of the container that will hold the information on the introductory screen */
     animation: 1s ease-in-out 0s 1 slide;
 }
@@ -78,18 +77,18 @@
 #firstText{
     color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sansSerif;
-    font-size: 100%;
+    font-size: 9vh;
     margin-bottom: 10px;
 }
 
 #underFirst{
     color: white;
-    font-size:30%;
+    font-size:3vh;
 }
 
 #personalPhoto{
-    width: 250px;
-    height: 250px;
+    width: 25vh;
+    height: 25vh;
     margin: auto;
 }
 #startPage{

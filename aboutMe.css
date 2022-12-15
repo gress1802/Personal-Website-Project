@@ -8,8 +8,8 @@
 
 #flexItem2{
     color: rgb(122, 122, 122);
-    font-size: 135%;
-    width: 50%;
+    font-size: 3vh;
+    width: 100vh;
 }
 
 #aboutHeading{
@@ -19,38 +19,111 @@
 #aboutMeFlex{
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items:center;
     background-color: rgb(22, 21, 21);
+    flex-direction: column;
+    overflow:hidden;
 }
+
 
 #aboutDesc{
     padding: 1%;
+    padding-left: 10vh;
     font-family: 'opensans-regular', sans-serif;
     font-size: 100%;
     text-indent: 30px;
+
 }
 
+/* Styling the timeline */
 #flexItem3{
     display: flex;
-    flex-direction: row;
-    padding-top: 50px;
+    flex-direction: column;
+    padding-top: 6vmax;
     flex-wrap: wrap;
 }
 
 #vl{
-    height: 25vmax;
-    border-left: 3px solid rgb(122, 122, 122);
+    width: 75vmin;
+    border-bottom: 2px solid rgb(122, 122, 122);
 }
 
-.careerImg{
-    width:3vmax;
-    height: 3vmax;
+.careerImgTop{
+    width:5vh;
+    height: 5vh;
+    padding-left:22vh;
+}
+
+.careerImgBottom{
+    width:5vh;
+    height: 5vh;
+    padding-left:23vh;
+}
+
+#firstTop{
+    width: 5vh;
+    height: 5vh;
+}
+
+#firstBottom{
+    width: 5vh;
+    height: 5vh;
+    padding-left: 13vh;
 }
 
 #break{
     height: 0;
     flex-basis: 100%;
 }
+
+/* The texts for the timeline */
+
+#topText{
+    display: flex;
+}
+
+#bottomText{
+    display: flex;
+
+}
+
+#firstTopText{
+    position: relative;
+    right: 4vmin;
+}
+
+#secondTopText{
+    padding-left: 10vmin;
+}
+
+#thirdTopText{
+    padding-left: 13vh;
+}
+
+#firstBottomText{
+    padding-left: 7vmin;
+}
+
+.timeLineText{
+    color: rgb(206, 121, 9);
+}
+
+#secondBottomText{
+    padding-left: 12vh;
+}
+
+#thirdBottomText{
+    padding-left: 15vh;
+}
+
+.above{
+    caption-side: top;
+    display: table-caption;
+}
+
+figure{
+    display: table;
+}
+
 
 
