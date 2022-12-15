@@ -96,4 +96,5 @@
     margin: auto;
     width: auto;
     height: 100vh; /* This is the height of the users viewport */
+    overflow:hidden;
 }

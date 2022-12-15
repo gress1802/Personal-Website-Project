@@ -35,6 +35,22 @@
     display: flex;
     flex-direction: row;
     padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+#vl{
+    height: 25vmax;
+    border-left: 3px solid rgb(122, 122, 122);
+}
+
+.careerImg{
+    width:3vmax;
+    height: 3vmax;
+}
+
+#break{
+    height: 0;
+    flex-basis: 100%;
 }
 
 
