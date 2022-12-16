@@ -5,14 +5,14 @@
     scroll-behavior: smooth;
 }
 
-ul{
+#navList{
     list-style-type: none;
     margin: 0;
     margin-right: auto;
     padding: 10px;
 }
 
-li{
+.navItem{
     padding-bottom: 10px;
     padding-top: 10px;
     width: 100px;
@@ -20,14 +20,14 @@ li{
     font-weight: bold;
 }
 
-li a{
+.navItem a{
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
-li a:hover{
+.navItem a:hover{
     -moz-border-radius-topleft: 10px;
     -moz-border-radius-topright: 10px;
     -moz-border-radius-bottomright: 10px;

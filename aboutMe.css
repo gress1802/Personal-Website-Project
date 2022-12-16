@@ -41,34 +41,59 @@
     flex-direction: column;
     padding-top: 6vmax;
     flex-wrap: wrap;
+    position: relative;
+    left: 7vmin;
 }
 
 #vl{
-    width: 75vmin;
+    width: 78vmin;
     border-bottom: 2px solid rgb(122, 122, 122);
-}
-
-.careerImgTop{
-    width:5vh;
-    height: 5vh;
-    padding-left:22vh;
-}
-
-.careerImgBottom{
-    width:5vh;
-    height: 5vh;
-    padding-left:23vh;
 }
 
 #firstTop{
     width: 5vh;
     height: 5vh;
+    padding: 1vh;
+}
+
+#secondTop{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    left: 20vmin;
+}
+
+#thirdTop{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    left: 39vmin;
 }
 
 #firstBottom{
+    position: relative;
     width: 5vh;
     height: 5vh;
-    padding-left: 13vh;
+    padding: 1vh;
+    left: 12vmin;
+}
+
+#secondBottom{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    left: 33vmin;
+}
+
+#thirdBottom{
+    position: relative;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    left: 56vmin;
 }
 
 #break{
@@ -76,7 +101,7 @@
     flex-basis: 100%;
 }
 
-/* The texts for the timeline */
+/* The texts and icons for the timeline */
 
 #topText{
     display: flex;
@@ -90,14 +115,17 @@
 #firstTopText{
     position: relative;
     right: 4vmin;
+    font-family: 'opensans-regular', sans-serif;
 }
 
 #secondTopText{
-    padding-left: 6vmin;
+    padding-left: 5vmin;
+    font-family: 'opensans-regular', sans-serif;
 }
 
 #thirdTopText{
-    padding-left: 10vh;
+    padding-left: 8vh;
+    font-family: 'opensans-regular', sans-serif;
 }
 
 .timeLineText{
@@ -106,15 +134,19 @@
 }
 
 #firstBottomText{
-    padding-left: 6vmin;
+    padding-left: 5vmin;
+    font-family: 'opensans-regular', sans-serif;
 }
 
 #secondBottomText{
-    padding-left: 8vh;
+    padding-left: 7vh;
+    font-family: 'opensans-regular', sans-serif;
 }
 
 #thirdBottomText{
     padding-left: 12vh;
+    font-family: 'opensans-regular', sans-serif;
+
 }
 
 .above{
@@ -125,7 +157,99 @@
 figure{
     display: table;
 }
+/* Adding hover for the images on the timeline */
+#firstTop:hover{
+    width:6vh;
+    height:6vh;
+}
+#secondTop:hover{
+    width:6vh;
+    height:6vh;
+}
+#thirdTop:hover{
+    width:6vh;
+    height:6vh;
+}
+#firstBottom:hover{
+    width:6vh;
+    height:6vh;
+}
+#secondBottom:hover{
+    width:6vh;
+    height:6vh;
+}
+#thirdBottom:hover{
+    width:6vh;
+    height:6vh;
+}
 
+/* Styling the modal popup */
 
+.firstModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width:500px;
+    max-width: 50%;
+}
 
+.firstModal.active{ /* Adding an active class to the element with id firstModal will activate the modal */
+    transform: translate(-50%,-50%) scale(1);
+}
 
+.modalHeader{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modalHeader .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modalHeader .closeButton{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modalBody{
+    padding: 10px 15px;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    transition: 200ms ease-in-out;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active{ /* adding the class "active" to the element with id "overlay" will activate overlay */
+    opacity: 1;
+    pointer-events: all;
+}
+
+#NBWList{
+    padding: 10px 15px;
+}
+
+#litem{
+    font-family: 'opensans-regular', sans-serif;
+}

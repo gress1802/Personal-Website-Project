@@ -26,11 +26,11 @@
             <header id = "navigation">
                 <nav>
                     <div id = "navBar">
-                        <ul> 
-                            <li><a id = "home" class = "top" href = "javascript:home()">Home</a></li>
-                            <li><a id = "about" class = "top" href = "javascript:aboutMe()">About</a></li>
-                            <li><a id = "projects" class = "top" href = "javascript:projects()">Projects</a></li>
-                            <li><a id = "contact" class = "top" href = "javascript:contact()">Contact</a></li>
+                        <ul id = "navList"> 
+                            <li class = "navItem"><a id = "home" class = "top" href = "javascript:home()">Home</a></li>
+                            <li class = "navItem"><a id = "about" class = "top" href = "javascript:aboutMe()">About</a></li>
+                            <li class = "navItem"><a id = "projects" class = "top" href = "javascript:projects()">Projects</a></li>
+                            <li class = "navItem"><a id = "contact" class = "top" href = "javascript:contact()">Contact</a></li>
                         </ul>
                         <div id = "icons">
                             <a class = "iconItem" href = "https://github.com/gress1802"><img class = "iconImage" src = "./Images/githubIcon.png" width = "30px" height = "30px"></a>
@@ -67,6 +67,74 @@
                     build new projects.
                 </p>
             </div>
+
+            <!--Creating the modal popup-->
+            <div class = "firstModal" id = "firstModal">
+                <div class = "modalHeader">
+                    <div class = "title">New Berlin West High School (2017-2021) </div>
+                    <button onclick = "exit('firstModal')">&times;</button>
+                </div>
+                <div class = "modalBody">
+                    <ul id = "NBWList">
+                        <li class = "litem">Graduated with a cumulative <strong>3.75 GPA</strong></li>
+                        <li class = "litem">Performed in the Milwaukee Youth Symphony Orchestra (MYSO), where I toured both the Republic of Ireland and Northern Ireland</li>
+                        <li class = "litem">Volunteered at Holy Apostles church regularly playing in the church band</li>
+                    </ul>
+                </div> 
+            </div>
+
+            <div class = "firstModal" id = "secondModal">
+                <div class = "modalHeader">
+                    <div class = "title">This is the title</div>
+                    <button onclick = "exit('secondModal')">&times;</button>
+                </div>
+                <div class = "modalBody">
+                    This is the body of the modal second
+                </div> 
+            </div>
+
+            <div class = "firstModal" id = "thirdModal">
+                <div class = "modalHeader">
+                    <div class = "title">This is the title</div>
+                    <button onclick = "exit('thirdModal')">&times;</button>
+                </div>
+                <div class = "modalBody">
+                    This is the body of the modal second
+                </div> 
+            </div>
+
+            <div class = "firstModal" id = "fourthModal">
+                <div class = "modalHeader">
+                    <div class = "title">This is the title</div>
+                    <button onclick = "exit('fourthModal')">&times;</button>
+                </div>
+                <div class = "modalBody">
+                    This is the body of the modal second
+                </div> 
+            </div>
+
+            <div class = "firstModal" id = "fifthModal">
+                <div class = "modalHeader">
+                    <div class = "title">This is the title</div>
+                    <button onclick = "exit('fifthModal')">&times;</button>
+                </div>
+                <div class = "modalBody">
+                    This is the body of the modal second
+                </div> 
+            </div>
+
+            <div class = "firstModal" id = "sixthModal">
+                <div class = "modalHeader">
+                    <div class = "title">This is the title</div>
+                    <button onclick = "exit('sixthModal')">&times;</button>
+                </div>
+                <div class = "modalBody">
+                    This is the body of the modal second
+                </div> 
+            </div>
+
+            <div id = "overlay"></div> <!--This is for the background-->
+
             <div id = "flexItem3">
                 <div id = "topText">
                     <div id = "firstTopText">
@@ -80,15 +148,15 @@
                     </div>
                 </div>
                 <div id = "top">
-                    <a class = "timelineIcon" href = "javascript:school()"><img id = "firstTop" src = "./Images/schoolIcon.png" alt = "Career Image"></a>
-                    <a class = "timelineIcon" href = "javascript:motionVolleyball()"><img class = "careerImgTop" src = "./Images/volleyballIcon.png" alt = "Career Image"></a>
-                    <a class = "timelineIcon" href = "javascript:frontDesk()"><img class = "careerImgTop" src = "./Images/frontDeskIcon.png" alt = "Career Image"></a>
+                    <a class = "timelineIconAnchor" href = "javascript:school()"><img id = "firstTop" src = "./Images/schoolIcon.png" alt = "Career Image"></a>
+                    <a class = "timelineIconAnchor" href = "javascript:motionVolleyball()"><img id = "secondTop" src = "./Images/volleyballIcon.png" alt = "Career Image"></a>
+                    <a class = "timelineIconAnchor" href = "javascript:frontDesk()"><img id = "thirdTop" src = "./Images/frontDeskIcon.png" alt = "Career Image"></a>
                 </div>
                 <div id = "vl"></div> <!--Vertical line-->
                 <div id = "bottom">
-                    <a class = "timelineIcon" href = "javascript:matteos()"><img id = "firstBottom" src = "./Images/restaurantIcon.png" alt = "Career Image"></a>
-                    <a class = "timelineIcon" href = "javascript:goodtimes()"><img class = "careerImgBottom" src = "./Images/volleyballIcon.png" alt = "Career Image"></a>
-                    <a class = "timelineIcon" href = "javascript:johnsonControls()"><img class = "careerImgBottom" src = "./Images/programmingIcon.png" alt = "Career Image"></a>
+                    <a class = "timelineIconAnchor" href = "javascript:matteos()"><img id = "firstBottom" src = "./Images/restaurantIcon.png" alt = "Career Image"></a>
+                    <a class = "timelineIconAnchor" href = "javascript:goodtimes()"><img id = "secondBottom" src = "./Images/volleyballIcon.png" alt = "Career Image"></a>
+                    <a class = "timelineIconAnchor" href = "javascript:johnsonControls()"><img id = "thirdBottom" src = "./Images/programmingIcon.png" alt = "Career Image"></a>
                 </div>
                 <div id = "bottomText">
                     <div id = "firstBottomText">
