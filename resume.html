@@ -72,10 +72,10 @@
             <div class = "firstModal" id = "firstModal">
                 <div class = "modalHeader">
                     <div class = "title">New Berlin West High School (2017-2021) </div>
-                    <button onclick = "exit('firstModal')">&times;</button>
+                    <button class = "exitButton" onclick = "exit('firstModal')">&times;</button>
                 </div>
                 <div class = "modalBody">
-                    <ul id = "NBWList">
+                    <ul class = "iconTextList">
                         <li class = "litem">Graduated with a cumulative <strong>3.75 GPA</strong></li>
                         <li class = "litem">Performed in the Milwaukee Youth Symphony Orchestra (MYSO), where I toured both the Republic of Ireland and Northern Ireland</li>
                         <li class = "litem">Volunteered at Holy Apostles church regularly playing in the church band</li>
@@ -85,51 +85,67 @@
 
             <div class = "firstModal" id = "secondModal">
                 <div class = "modalHeader">
-                    <div class = "title">This is the title</div>
-                    <button onclick = "exit('secondModal')">&times;</button>
+                    <div class = "title">Assistant Coach (January 2022 - Present)</div>
+                    <button class = "exitButton" onclick = "exit('secondModal')">&times;</button>
                 </div>
                 <div class = "modalBody">
-                    This is the body of the modal second
+                    <ul class = "iconTextList">
+                        <li class = "litem">Working part time as an assistant coach while studying at UW-La Crosse</li>
+                        <li class = "litem">Instilling passion and a hardworking attitude that results in continuous improvements in each player</li>
+                    </ul>
                 </div> 
             </div>
 
             <div class = "firstModal" id = "thirdModal">
                 <div class = "modalHeader">
-                    <div class = "title">This is the title</div>
-                    <button onclick = "exit('thirdModal')">&times;</button>
+                    <div class = "title">Front Desk Assistant</div>
+                    <button class = "exitButton" onclick = "exit('thirdModal')">&times;</button>
                 </div>
                 <div class = "modalBody">
-                    This is the body of the modal second
+                    <ul class = "iconTextList">
+                        <li class = "litem">Solved residents' unique problems while corresponding with eighteen coworkers about best maintaining facilities</li>
+                        <li class = "litem">Updated and maintained data on tools being rented by the residents</li>
+                    </ul>
                 </div> 
             </div>
 
             <div class = "firstModal" id = "fourthModal">
                 <div class = "modalHeader">
-                    <div class = "title">This is the title</div>
-                    <button onclick = "exit('fourthModal')">&times;</button>
+                    <div class = "title">Pizza Chef (January 2021 - January 2022)</div>
+                    <button class = "exitButton" onclick = "exit('fourthModal')">&times;</button>
                 </div>
                 <div class = "modalBody">
-                    This is the body of the modal second
+                    <ul class = "iconTextList">
+                        <li class = "litem">Provided excellent customer service and communicated efficiently with coworkers to be as efficient as possible</li>
+                        <li class = "litem">Learned food handling by preparing pizzas and garlic bread from scratch</li>
+                    </ul>
                 </div> 
             </div>
 
             <div class = "firstModal" id = "fifthModal">
                 <div class = "modalHeader">
-                    <div class = "title">This is the title</div>
-                    <button onclick = "exit('fifthModal')">&times;</button>
+                    <div class = "title">Head Coach (May 2022 - August 2022)</div>
+                    <button class = "exitButton" onclick = "exit('fifthModal')">&times;</button>
                 </div>
                 <div class = "modalBody">
-                    This is the body of the modal second
+                    <ul class = "iconTextList">
+                        <li class = "litem">Working with kids ages 6-18 who are passionate about volleyball</li>
+                        <li class = "litem">Building drills, mentoring campers, and building a sense of community while ensuring everying is having an amazing time</li>
+                    </ul>
                 </div> 
             </div>
 
             <div class = "firstModal" id = "sixthModal">
                 <div class = "modalHeader">
-                    <div class = "title">This is the title</div>
-                    <button onclick = "exit('sixthModal')">&times;</button>
+                    <div class = "title">Data Analyst Intern</div>
+                    <button class = "exitButton" onclick = "exit('sixthModal')">&times;</button>
                 </div>
                 <div class = "modalBody">
-                    This is the body of the modal second
+                    <ul class = "iconTextList">
+                        <li class = "litem">Insert internship functions</li>
+                        <li class = "litem">Insert internship functions</li>
+                        <li class = "litem">Insert internship functions</li>
+                    </ul>
                 </div> 
             </div>
 
@@ -141,32 +157,37 @@
                         <p class = "timeLineText">New Berlin West</p>
                     </div>
                     <div id = "secondTopText">
-                        <p class = "timeLineText">Motion Volleyball Program</p>
+                        <p class = "timeLineText">Assistant Coach</p>
                     </div>
                     <div id = "thirdTopText">
-                        <p class = "timeLineText">UW-La Crosse</p>
+                        <p class = "timeLineText">Front Desk Assistant</p>
                     </div>
                 </div>
                 <div id = "top">
                     <a class = "timelineIconAnchor" href = "javascript:school()"><img id = "firstTop" src = "./Images/schoolIcon.png" alt = "Career Image"></a>
+                    <img id = "firstArrow" src = "./Images/downArrowIcon.png">
                     <a class = "timelineIconAnchor" href = "javascript:motionVolleyball()"><img id = "secondTop" src = "./Images/volleyballIcon.png" alt = "Career Image"></a>
+                    <img id = "secondArrow" src = "./Images/downArrowIcon.png">
                     <a class = "timelineIconAnchor" href = "javascript:frontDesk()"><img id = "thirdTop" src = "./Images/frontDeskIcon.png" alt = "Career Image"></a>
+                    <img id = "thirdArrow" src = "./Images/downArrowIcon.png">
                 </div>
                 <div id = "vl"></div> <!--Vertical line-->
                 <div id = "bottom">
                     <a class = "timelineIconAnchor" href = "javascript:matteos()"><img id = "firstBottom" src = "./Images/restaurantIcon.png" alt = "Career Image"></a>
+                    <img id = "fourthArrow" src = "./Images/downArrowIcon.png">
                     <a class = "timelineIconAnchor" href = "javascript:goodtimes()"><img id = "secondBottom" src = "./Images/volleyballIcon.png" alt = "Career Image"></a>
+                    <img id = "fifthArrow" src = "./Images/downArrowIcon.png">
                     <a class = "timelineIconAnchor" href = "javascript:johnsonControls()"><img id = "thirdBottom" src = "./Images/programmingIcon.png" alt = "Career Image"></a>
                 </div>
                 <div id = "bottomText">
                     <div id = "firstBottomText">
-                        <p class = "timeLineText">Matteo's Italian Ristorante</p>
+                        <p class = "timeLineText">Pizza Chef</p>
                     </div>
                     <div id = "secondBottomText">
-                        <p class = "timeLineText">Goodtimes Beach Club</p>
+                        <p class = "timeLineText">Head Beach Coach</p>
                     </div>
                     <div id = "thirdBottomText">
-                        <p class = "timeLineText">Johnson Controls</p>
+                        <p class = "timeLineText">Data Analyst Intern</p>
                     </div>
                 </div>
             </div>

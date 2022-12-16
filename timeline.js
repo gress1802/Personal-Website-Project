@@ -17,17 +17,17 @@ function frontDesk(){
 }
 
 function matteos(){
-    document.getElementById("thirdModal").classList.add("active");
+    document.getElementById("fourthModal").classList.add("active");
     overlay.classList.add("active");
 }
 
 function goodtimes(){
-    document.getElementById("thirdModal").classList.add("active");
+    document.getElementById("fifthModal").classList.add("active");
     overlay.classList.add("active");
 }
 
 function johnsonControls(){
-    document.getElementById("thirdModal").classList.add("active");
+    document.getElementById("sixthModal").classList.add("active");
     overlay.classList.add("active");
 }
 
