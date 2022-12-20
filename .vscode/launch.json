@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch InsertSorted",
+            "request": "launch",
+            "mainClass": "InsertSorted",
+            "projectName": "Personal Website Project_161b3a55"
+        },
+        {
             "type": "msedge",
             "request": "launch",
             "name": "Launch Edge against localhost",
