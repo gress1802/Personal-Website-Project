@@ -1,8 +1,9 @@
 /* This is the styling for the projects page */
 
 #projectsContainer{
-    height: 100vh;
+    height: auto;
     background-color: rgb(22, 21, 21);
+    padding-bottom: 50px;
 }
 
 #projectHeading{
@@ -25,8 +26,10 @@
     width: 20%;
     border-radius: 10px;
     padding: 2vw;
-    margin: 3vw;
+    margin: 1vw;
     background-color: rgb(67, 67, 67);
+    height: 17vmax;
+    word-break: break-all;
 }
 
 .projectHeader{
@@ -34,4 +37,16 @@
     text-align: center;
     font-size: 2vmax;
     display: block;
+}
+
+.projectP{
+    font-size: 1.5vmax;
+    text-align: center;
+    font-family: 'opensans-regular', sans-serif;
+}
+
+.projectItem > img{
+    padding-top: 5vh;
+    height: 10vmax;
+    width: 10vmax;
 }

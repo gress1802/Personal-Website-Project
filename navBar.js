@@ -19,7 +19,7 @@ function aboutMe(){
 }
 
 function projects(){
-    document.getElementById("projectsPageBody").scrollIntoView(true);
+    document.getElementById("projectsContainer").scrollIntoView(true);
 }
 
 function contact(){
