@@ -1,0 +1,67 @@
+/* This is the styling for the projects sections of the website */
+
+/* Styling for the heading of the skill page */
+#skillsPageBody{
+    height: auto;
+    background-color: rgb(122, 122, 122);
+    padding-bottom: 50px;
+}
+
+.flexHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    color: rgb(22, 21, 21);
+    font-family: 'Lora', serif;
+    font-size: 4vmax;
+    padding-top: 5vh;
+}
+
+/* Styling for the rows */
+#skillRows{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skillItem{
+    width: 30%;
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: left;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+.skillItemHeader{
+    font-size: 2vmax;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.itemHeadContainer{
+    display: block;
+}
+
+.skillP{
+    font-size: 1.5vmax;
+    text-align: left;
+    font-family: 'opensans-regular', sans-serif;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.skillIcon{
+    width: 5vh;
+    height: 5vh;
+}
+
+

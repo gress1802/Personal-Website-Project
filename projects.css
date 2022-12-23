@@ -1,68 +1,37 @@
-/* This is the styling for the projects sections of the website */
+/* This is the styling for the projects page */
 
-/* Styling for the heading of the skill page */
-#projectsPageBody{
-    height: auto;
-    background-color: rgb(122, 122, 122);
-    padding-bottom: 50px;
+#projectsContainer{
+    height: 100vh;
+    background-color: rgb(22, 21, 21);
 }
 
-#flexHeader{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#projectHeading{
+    color: rgb(206, 121, 9);
 }
 
-#skillsHeader{
-    color: rgb(22, 21, 21);
-    font-family: 'Lora', serif;
-    font-size: 4vmax;
-    padding-top: 5vh;
-}
-
-/* Styling for the rows */
-#skillRows{
-    width: 70%;
+#projectRows{
+    width: 90%;
     margin: auto;
-    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.skillItem{
-    width: 30%;
+.projectItem{
+    text-align: center;
     border: 5px solid black;
+    display: block;
+    width: 20%;
     border-radius: 10px;
-    text-align: left;
     padding: 2vw;
-    margin: 1vw;
+    margin: 3vw;
+    background-color: rgb(67, 67, 67);
 }
 
-.skillItemHeader{
+.projectHeader{
+    color: rgb(22, 21, 21);
+    text-align: center;
     font-size: 2vmax;
-    padding-bottom: 20px;
-    display: inline-block;
-}
-
-.itemHeadContainer{
     display: block;
 }
-
-.skillP{
-    font-size: 1.5vmax;
-    text-align: left;
-    font-family: 'opensans-regular', sans-serif;
-}
-
-.inlineBlock{
-    display: inline-block;
-}
-
-.skillIcon{
-    width: 5vh;
-    height: 5vh;
-}
-
-
