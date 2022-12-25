@@ -1,0 +1,32 @@
+/* styling for the footer */
+
+footer{
+    background-color: rgb(22, 21, 21);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(67,67,67);
+}
+
+
+#leftFooter{
+    position: relative;
+    right: 25vw;
+    padding-top: 22px;
+}   
+
+#rightFooter{
+    position: relative;
+    left: 20vw;
+    padding-top: 22px;
+}
+
+.footText{
+    color: white;
+}
+
+.iconItemFoot{
+    position: relative;
+    bottom: 10px;
+    padding-left: 10px;
+}

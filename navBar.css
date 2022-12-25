@@ -37,10 +37,14 @@
     background-color: #111;
 }
 
-.iconImage:hover{
-    width: 35px;
-    height:35px;
+.iconImage{
+    transition: all .1s ease-in-out;
 }
+
+.iconImage:hover{
+    transform: scale(1.25);
+}
+
 
 header{
     display: block;
@@ -92,6 +96,68 @@ header:after{
 
 body{
     margin: auto;
+}
+
+.emailTitle{
+    font-weight: bold;
+    font-family: 'opensans-regular', sans-serif;
+    font-size: 25px;
+}
+
+.modalEmailBody{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userEmail{
+    font-family: 'opensans-regular', sans-serif;
+    background-color: rgb(67,67,67);
+    width: 30vw;
+    height: 5vh;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#subject{
+    margin-top: 20px;
+    font-family: 'opensans-regular', sans-serif;
+    background-color: rgb(67,67,67);
+    width: 30vw;
+    height: 5vh;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#content{
+    margin-top: 20px;
+    font-family: 'opensans-regular', sans-serif;
+    background-color: rgb(67,67,67);
+    width: 30vw;
+    height: 40vh;
+    padding: 0;
+    margin-top: 10px;
+}
+
+::placeholder{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+input{
+    text-align: left;
+}
+
+#sendButton{
+    font-family: 'opensans-regular', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(67,67,67);
+    border: 2px solid rgb(44,44,44);
+    width: 10vw;
+    height: 5vh;
+    cursor: pointer;
 }
 
 

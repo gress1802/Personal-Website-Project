@@ -8,9 +8,10 @@
         <!--Links to CSS -->
         <link href = "./navBar.css" rel = "stylesheet"> <!--styling for navigation bar-->
         <link href = "./intro.css" rel = "stylesheet"> <!--styling for the content at "Home"-->
-        <link href = "./aboutMe.css" rel = "stylesheet"> <!--styling for the about me section-->
-        <link href = "./skills.css" rel = "stylesheet"> <!--styling for skills-->
-        <link href = "./projects.css" rel = "stylesheet"> <!--styling for projects-->
+        <link href = "./aboutMe.css" rel = "stylesheet"> <!--styling for the about me portion-->
+        <link href = "./skills.css" rel = "stylesheet"> <!--styling for skills portion-->
+        <link href = "./projects.css" rel = "stylesheet"> <!--styling for projects portion-->
+        <link href = "./footer.css" rel = "stylesheet"> <!--styling for contact portion-->
 
         <!--Links to JavaScript-->
         <script src = "./navBar.js" defer></script> <!--defer to execute after parsing-->
@@ -23,6 +24,20 @@
     </head>
 
     <body>
+        <!--This is the modal for when the email button is clicked-->
+        <div class = "firstModal" id = "email">
+            <div class = "modalProjectHeader">
+                <div><span class = "emailTitle">Email Me!</span></div>
+                <button class = "exitProject" onclick = "pExit('email')">&times;</button>
+            </div>
+            <div class = "modalEmailBody">
+                <div><input type = "text" id = "userEmail" name = "emailOfUser" placeholder = "Enter Your Email"></div>
+                <div><input type = "text" id = "subject" name = "emailSubject" placeholder = "Enter the Email Subject"></div>
+                <div><input type = "text" id = "content" name = "emailContents" placeholder = "Enter the Contents of Your Email"></div>
+                <button id = "sendButton" onclick = "sendEmail()">Send</button>
+            </div> 
+        </div>
+        
         <!--This is the introductory page container-->
         <div id = "startPage">
             <!--This is the navigation bar-->
@@ -174,7 +189,6 @@
                     <a class = "timelineIconAnchor" href = "javascript:frontDesk()"><img id = "thirdTop" src = "./Images/frontDeskIcon.png" alt = "Career Image"></a>
                     <img id = "thirdArrow" src = "./Images/downArrowIcon.png">
                 </div>
-                <div id = "vl"></div> <!--Vertical line-->
                 <div id = "bottom">
                     <a class = "timelineIconAnchor" href = "javascript:matteos()"><img id = "firstBottom" src = "./Images/restaurantIcon.png" alt = "Career Image"></a>
                     <img id = "fourthArrow" src = "./Images/downArrowIcon.png">
@@ -235,7 +249,7 @@
                         <div class = "inlineBlock"><img class = "skillIcon" src = "./Images/webdevIcon.png"></div>
                         <h1 class = "skillItemHeader">Web Dev.</h1>
                     </div>
-                    <p class = "skillP">I have around one year of experience with HTML, CSS, and JavaScript. In addition to this website, I have completed many projects that have helped me become very familiar with web design.</p>
+                    <p class = "skillP">I have around one year of experience with HTML, CSS, and JavaScript. In addition to this website, I have completed many projects that have helped me become very familiar with web development</p>
                 </div>
                 <div class = "skillItem">
                     <div class = "itemHeadContainer">
@@ -253,47 +267,114 @@
             </div>
             <!--This is where the projects are now-->
             <div id = "projectRows">
-                <div class = "projectItem">
+                <a class = "projectItem" href = "javascript:firstProject()">
                     <div class = "itemHeadContainer">
-                        <h1 class = "projectHeader">B+ Tree <br> Implementation</h1>
+                        <h1 class = "projectHeader">B+ Tree<br> Implementation</h1>
                     </div>
                     <img src = "./Images/treeIcon.png">
-                </div>
-                <div class = "projectItem">
+                </a>
+                <a class = "projectItem" href = "javascript:secondProject()">
                     <div class = "itemHeadContainer">
                         <h1 class = "projectHeader">Huffman Encoding/Decoding</h1>
                     </div>
                     <img src = "./Images/encodingIcon.png">
-                </div>
-                <div class = "projectItem">
+                </a>
+                <a class = "projectItem" href = "javascript:thirdProject()">
                     <div class = "itemHeadContainer">
-                        <h1 class = "projectHeader">Volleyball Database</h1>
+                        <h1 class = "projectHeader">Volleyball <br> Database</h1>
                     </div>
-                    <img src = "./Images/sqlIcon.png">
-                </div>
-                <div class = "projectItem">
-                    <div class = "itemHeadContainer">
-                        <h1 class = "projectHeader">TBD</h1>
-                    </div>
-                    <p class = "projectP"></p>
-                </div>
-                <div class = "projectItem">
+                    <img src = "./Images/databaseIcon.png">
+                </a>
+                <a class = "projectItem" href = "javascript:fourthProject()">
                     <div class = "itemHeadContainer">
                         <h1 class = "projectHeader">TBD</h1>
                     </div>
-                    <p class = "projectP"></p>
-                </div>
-                <div class = "projectItem">
+                    <img src = "./Images/questionMarkIcon.png">
+                </a>
+                <a class = "projectItem" href = "javascript:fifthProject()">
                     <div class = "itemHeadContainer">
                         <h1 class = "projectHeader">TBD</h1>
                     </div>
-                    <p class = "projectP"></p>
+                    <img src = "./Images/questionMarkIcon.png">
+                </a>
+                <a class = "projectItem" href = "javascript:sixthProject()">
+                    <div class = "itemHeadContainer">
+                        <h1 class = "projectHeader">TBD</h1>
+                    </div>
+                    <img src = "./Images/questionMarkIcon.png">
+                </a>
+            </div>
+            <!--The modal popups-->
+            <div id = "pOverlay"></div> <!--This is for the background-->
+            <div class = "firstModal" id = "firstProject">
+                <div class = "modalProjectHeader">
+                    <div class = "projectTitle"><span class = "pt">B+ Tree Implementation</span></div>
+                    <button class = "exitProject" onclick = "pExit('firstProject')">&times;</button>
                 </div>
+                <div class = "modalProjectBody">
+                    <p class = "projectPara">In this project I implemented a B+ Tree along with its insert method. In this implementation, I used two Java random access file. The first file is used to keep an out of memory copy of each node and its contents. The whole tree is never fully built in memory; the tree is traversed node by node jumping from address to address in the BTree random access file. The other file is a database table. The leaves of the B+ Tree point to addresses in this file which contain the data inserted into the tree. <br> <br> <a target = "_blank" class = "githubLink" href = "https://github.com/gress1802/B-Tree">B+ Tree Github</a> <br> </p>
+                    <div id = "side">
+                        <figure><img class = "exPic" src = "./Images/btreeFileEX.png"></figure>
+                        <figure><img class = "exPic" src = "./Images/dbtableEX.png"></figure>
+                    </div>
+                </div>
+            </div>
+            <div class = "firstModal" id = "secondProject">
+                <div class = "modalProjectHeader">
+                    <div class = "projectTitle"><span class = "pt">Huffman Encoding and Decoding</span></div>
+                    <button class = "exitProject" onclick = "pExit('secondProject')">&times;</button>
+                </div>
+                <div class = "modalProjectBody">
+                    <p class = "projectPara">In this project, Huffman Compression and Decompression was implemented. A huffman tree was build using the character frequencies in the text file that is used as input for the program and a binary heap as a priority queue. Bit manipulation was also used in order to pack bits into a single byte for compression and vise versa for decompression. <br> <br> <a target = "_blank" class = "githubLink" href = "https://github.com/gress1802/Huffman">Huffman Github</a> <br> </p>
+                </div> 
+            </div>
+            <div class = "firstModal" id = "thirdProject">
+                <div class = "modalProjectHeader">
+                    <div class = "projectTitle"><span class = "pt">Volleyball Database</span></div>
+                    <button class = "exitProject" onclick = "pExit('thirdProject')">&times;</button>
+                </div>
+                <div class = "modalProjectBody">
+                    <p class = "projectPara">In this project, I build a relational database using SQLite including volleyball clubs, teams within those clubs, coaches leading the teams, and players playing on the team. Additionally, I also built a java gui that uses JDBC to interact with this database. This gui can be used to query and display tuples, update certain tuples, and delete certain tuples from the database. <br> <br> <a target = "_blank" class = "githubLink" href = "https://github.com/gress1802/VolleyballDB">Database and GUI Github</a> <br> </p>
+                    <div id = "center">
+                        <img class = "exPic"src = "Images/dbGUI.png">
+                    </div>
+                </div> 
+            </div>
+            <div class = "firstModal" id = "fourthProject">
+                <div class = "modalProjectHeader">
+                    <div class = "projectTitle"><span class = "pt"></span></div>
+                    <button class = "exitProject" onclick = "pExit('fourthProject')">&times;</button>
+                </div>
+                <div class = "modalProjectBody">
+                </div> 
+            </div>
+            <div class = "firstModal" id = "fifthProject">
+                <div class = "modalProjectHeader">
+                    <div class = "projectTitle"><span class = "pt"></span></div>
+                    <button class = "exitProject" onclick = "pExit('fifthProject')">&times;</button>
+                </div>
+                <div class = "modalProjectBody">
+                </div> 
+            </div>
+            <div class = "firstModal" id = "sixthProject">
+                <div class = "modalProjectHeader">
+                    <div class = "projectTitle"><span class = "pt"></span></div>
+                    <button class = "exitProject" onclick = "pExit('sixthProject')">&times;</button>
+                </div>
+                <div class = "modalProjectBody">
+                </div> 
             </div>
         </div>
 
         <footer>
-
+            <div id = "leftFooter">
+                <span class = "footText">Copyright &copy Joseph Gress 2022</span>
+            </div>
+            <div id = "rightFooter">
+                <a class = "iconItemFoot" href = "https://github.com/gress1802"><img class = "iconImage" src = "./Images/githubIcon.png" width = "40px" height = "40px"></a>
+                <a class = "iconItemFoot" href = "javascript:mail()"><img class = "iconImage" src = "./Images/mailIcon.png" width = "40px" height = "40px"></a>
+                <a class = "iconItemFoot" href = "https://linkedin.com/in/joseph-gress"><img class = "iconImage" src = "./Images/linkedinIcon.png" width = "40px" height = "40px"></a>
+            </div>
         </footer>
     </body>
 </html>

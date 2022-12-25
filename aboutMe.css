@@ -1,5 +1,9 @@
 /* This is the stylesheet for the about me section of my website */
 
+body{
+    min-width: 600px;
+    min-height: 600px;
+}
 
 #flexItem1{
     font-size: 120%;
@@ -10,14 +14,16 @@
     color: rgb(122, 122, 122);
     font-size: 3vh;
     width: 100vh;
+    max-width: 75%;
 }
 
 #aboutHeading{
     color: rgb(206, 121, 9);
+    font-size: 8vmin;
 }
 
 #aboutMeFlex{
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items:center;
     background-color: rgb(22, 21, 21);
@@ -43,18 +49,15 @@
     padding-top: 6vmax;
     flex-wrap: wrap;
     position: relative;
-    left: 6vmin;
-}
-
-#vl{
-    width: 78vmin;
-    border-bottom: 2px solid rgb(122, 122, 122);
+    right: 11vmin;
+    padding-bottom: 3vmax;
 }
 
 #firstTop{
     width: 5vh;
     height: 5vh;
     padding: 1vh;
+    transition: all .1s ease-in-out;
 }
 
 #secondTop{
@@ -63,6 +66,7 @@
     height: 5vh;
     padding: 1vh;
     left: 12vmin;
+    transition: all .1s ease-in-out;
 }
 
 #thirdTop{
@@ -71,6 +75,7 @@
     height: 5vh;
     padding: 1vh;
     left: 26vmin;
+    transition: all .1s ease-in-out;
 }
 
 #firstBottom{
@@ -79,6 +84,7 @@
     height: 5vh;
     padding: 1vh;
     left: 13vmin;
+    transition: all .1s ease-in-out;
 }
 
 #secondBottom{
@@ -87,6 +93,7 @@
     height: 5vh;
     padding: 1vh;
     left: 26vmin;
+    transition: all .1s ease-in-out;
 }
 
 #thirdBottom{
@@ -95,6 +102,7 @@
     height: 5vh;
     padding: 1vh;
     left: 41vmin;
+    transition: all .1s ease-in-out;
 }
 
 #break{
@@ -152,7 +160,6 @@
     position: relative;
     font-family: 'opensans-regular', sans-serif;
     left: 39vmin
-
 }
 
 .above{
@@ -201,8 +208,10 @@ figure{
     border-radius: 10px;
     z-index: 10;
     background-color: rgb(122, 122, 122);
-    width:500px;
-    max-width: 50%;
+    width:600px;
+    max-width: 60%;
+    max-height: 70%;
+    overflow-y:auto
 }
 
 .firstModal.active{ /* Adding an active class to the element with id firstModal will activate the modal */
@@ -268,8 +277,8 @@ figure{
     position: relative;
     transform: rotate(-40deg);
     top: 9px;
-    height: 7vh;
-    width: 7vh;
+    height: 7vmin;
+    width: 7vmin;
 }
 
 #secondArrow{
@@ -314,4 +323,9 @@ figure{
     background-color: rgb(122, 122, 122);
     border: none;
     cursor: pointer;
+    font-size: 35px;
+    border: 1px solid rgb(67, 67, 67);
+    border-radius: 10px;
+    padding: 2px 7px 2px 7px;
 }
+

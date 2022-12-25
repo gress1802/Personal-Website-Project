@@ -30,6 +30,11 @@
     background-color: rgb(67, 67, 67);
     height: 17vmax;
     word-break: break-all;
+    transition: all .2s ease-in-out;
+}
+
+.projectItem:hover{
+    transform: scale(1.15);
 }
 
 .projectHeader{
@@ -47,6 +52,107 @@
 
 .projectItem > img{
     padding-top: 5vh;
-    height: 10vmax;
-    width: 10vmax;
+    height: 10vmin;
+    width: 10vmin;
 }
+
+a{
+    text-decoration: none;
+}
+
+#pOverlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    transition: 200ms ease-in-out;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#pOverlay.active{ /* adding the class "active" to the element with id "overlay" will activate overlay */
+    opacity: 1;
+    pointer-events: all;
+}
+
+.exitProject{
+    background-color: rgb(122, 122, 122);
+    cursor: pointer;
+    z-index: 1;
+    margin-left: auto;
+    font-size: 35px;
+    border: 1px solid rgb(67, 67, 67);
+    border-radius: 10px;
+    padding: 2px 7px 2px 7px;
+}
+
+.projectTitle{
+    flex: 0 1 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modalProjectHeader{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+    height: 7vh;
+}
+
+.modalProjectBody{
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.pt{
+    font-weight: bold;
+    font-family: 'opensans-regular', sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 750px){
+    .pt{
+        font-weight: bold;
+        font-family: 'opensans-regular', sans-serif;
+        font-size: 15px;
+    }
+}
+
+.projectPara{
+    font-family: 'opensans-regular', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.exPic{
+    width: 15vmax;
+    height: 15vmax;
+    padding: 20px;
+}
+
+#side{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.githubLink{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'opensans-regular', sans-serif;
+    color:rgb(73, 42, 2);
+}
+
+#center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
