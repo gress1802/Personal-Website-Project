@@ -135,14 +135,19 @@ body{
     font-family: 'opensans-regular', sans-serif;
     background-color: rgb(67,67,67);
     width: 30vw;
-    height: 40vh;
-    padding: 0;
-    margin-top: 10px;
+    padding-bottom: 40vh;
+    vertical-align: left;
 }
 
 ::placeholder{
     text-align: center;
     word-wrap: break-word;
+}
+
+#content::placeholder{
+    text-align: center;
+    word-wrap: break-word;
+    padding-top: 10px;
 }
 
 input{

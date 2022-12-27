@@ -18,6 +18,11 @@
         <script src = "./timeline.js" defer></script>
         <script src = "./projects.js" defer></script>
 
+        <!--emailJS-->
+        <script src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+        <script src = "./connectEmailJS.js" defer></script>
+        <script src = "./sending.js" defer></script>
+
         <!--Meta Data-->
         <meta charset="utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
@@ -30,12 +35,12 @@
                 <div><span class = "emailTitle">Email Me!</span></div>
                 <button class = "exitProject" onclick = "pExit('email')">&times;</button>
             </div>
-            <div class = "modalEmailBody">
-                <div><input type = "text" id = "userEmail" name = "emailOfUser" placeholder = "Enter Your Email"></div>
-                <div><input type = "text" id = "subject" name = "emailSubject" placeholder = "Enter the Email Subject"></div>
-                <div><input type = "text" id = "content" name = "emailContents" placeholder = "Enter the Contents of Your Email"></div>
-                <button id = "sendButton" onclick = "sendEmail()">Send</button>
-            </div> 
+            <form to_name = "jgress1802@gmail.com" id = "contact-form" class = "modalEmailBody">
+                <input name = "from_name" type = "text" id = "userEmail" name = "emailOfUser" placeholder = "Enter Your Email">
+                <input name = "Content" type = "text" id = "subject" name = "emailSubject" placeholder = "Enter the Email Subject">
+                <textarea name = "message" id = "content" placeholder = "Your Email Content"></textarea>
+                <input type = "submit" id = "sendButton" name = "sent">
+            </form> 
         </div>
         
         <!--This is the introductory page container-->

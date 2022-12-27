@@ -1,28 +1,31 @@
 /* styling for the footer */
 
 footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: rgb(22, 21, 21);
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border-top: 1px solid rgb(67,67,67);
 }
 
 
 #leftFooter{
     position: relative;
-    right: 25vw;
-    padding-top: 22px;
+    top: 10px;
+    padding-left: 6vw;
 }   
 
 #rightFooter{
     position: relative;
-    left: 20vw;
-    padding-top: 22px;
+    top: 10px;
+    padding-right: 6vw;
 }
 
 .footText{
     color: white;
+    font-size: 2.25vmin;
 }
 
 .iconItemFoot{
