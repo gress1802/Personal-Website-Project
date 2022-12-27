@@ -38,11 +38,12 @@ function projects(){
     document.getElementById("projectsContainer").scrollIntoView(true);
 }
 
+function skills(){
+    document.getElementById('skillsPageBody').scrollIntoView(true);
+}
+
 function mail(){
     document.getElementById("email").classList.add("active");
     pOverlay.classList.add("active");
 }
 
-function sendEmail(){
-
-}

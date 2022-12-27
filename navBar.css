@@ -118,6 +118,7 @@ body{
     height: 5vh;
     padding: 0;
     margin-top: 10px;
+    font-size: 20px;
 }
 
 #subject{
@@ -128,6 +129,7 @@ body{
     height: 5vh;
     padding: 0;
     margin-top: 10px;
+    font-size: 20px;
 }
 
 #content{
@@ -135,8 +137,10 @@ body{
     font-family: 'opensans-regular', sans-serif;
     background-color: rgb(67,67,67);
     width: 30vw;
-    padding-bottom: 40vh;
+    height: 40vh;
     vertical-align: left;
+    font-size: 15px;
+    padding: 7px;
 }
 
 ::placeholder{
@@ -160,10 +164,24 @@ input{
     margin-bottom: 10px;
     background-color: rgb(67,67,67);
     border: 2px solid rgb(44,44,44);
-    width: 10vw;
-    height: 5vh;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     cursor: pointer;
+    font-weight: bold;
+    transition: all .1s ease-in-out;
 }
+
+
+
+
+#sendButton:hover{
+    transform: scale(1.1);
+}
+
 
 
 
